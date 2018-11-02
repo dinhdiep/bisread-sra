@@ -1,0 +1,28 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	clip_overlap
+	1	fix_mate_info
+	1	make_hapinfo
+	1	mapping_report
+	1	minimap2
+	1	minimap_index
+	1	process_hits
+	1	rmdup
+	1	sort_hits
+	10
+
+[Thu Nov  1 06:34:45 2018]
+rule minimap_index:
+    input: /Genomes/Hg38_plusLambda/Hg38_plusLambda.bis.CT, /Genomes/Hg38_plusLambda/Hg38_plusLambda.bis.GA
+    output: /Genomes/Hg38_plusLambda/Hg38_plusLambda.bis.CT.fai, /Genomes/Hg38_plusLambda/Hg38_plusLambda.bis.GA.fai, /Genomes/Hg38_plusLambda/Hg38_plusLambda.bis.CT.mmi, /Genomes/Hg38_plusLambda/Hg38_plusLambda.bis.GA.mmi
+    log: /Genomes/Hg38_plusLambda/minimap2_index.log
+    jobid: 13
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/dinh/bisulfite-seq/bisread-sra/.snakemake/log/2018-11-01T063445.238366.snakemake.log

@@ -1,0 +1,44 @@
+# Path to a JSON file with samples and their corresponding FASTQ files.
+SAMPLES_JSON: 'samples.json'
+
+# Directory where prepared fastq files will be stored
+FASTQ_DIR: 'processed_fastq'
+
+# Directory where the BAM files will be stored
+BAM_DIR: 'bam_files'
+
+# Directory where the methylation files will be stored
+METHYL_DIR: 'methyl_files'
+
+# Full path to the genome fasta file containing all the chromosomes
+GENOME: '/Genomes/Hg38_plusLambda/Hg38_plusLambda'
+
+# Minimum map score
+MAP_SCORE: 10
+
+# Set the trimming mode to be BSPP, WGBS, or RRBS for this run
+TRIM_MODE: 'WGBS'
+
+# Set the UMI sequence length to be extracted from read 1
+UMI_LENGTH: 0
+
+# Set the read 1 adapter sequence, use default 'AGATCGGAAGAGC' if you don't know/have any
+ADAPTER1: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCA'
+
+# Set the read 2 adapter sequence, use default 'AGATCGGAAGAGC' if you don't know/have any
+ADAPTER2: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT'
+
+# Set the quality base for Illumina reads 64 or 33
+QUAL_BASE: 33
+
+# Set the error rate for adapter trimming
+ERROR_RATE: 0.1
+
+# Set the quality score cutoff for trimming by quality score at 3' end
+QUAL_CUTOFF: 20
+
+# Set the minimum read length required to retain the read after trimming
+MINIMUM_LENGTH: 30
+
+# Set the required overlap in base pair for trimming adapter to avoid spurious mapping
+REQUIRED_OVERLAP: 5
