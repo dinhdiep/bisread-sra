@@ -25,7 +25,7 @@ Go to the bisread-sra directory
    cd bisread-sra
 ```
 
-Use the yaml file to install all required software into an isolated Conda environment with the name [bisread-preprocess]
+Use the yaml file to install all required software into an isolated Conda environment with the name **bisread-sra**
 ```bash
    conda env create --name bisread-sra --file environment.yml
 ```
