@@ -42,11 +42,7 @@ Note: to exit the environment, just execute the following command. Don't do this
 
 ## Generating samples.json and configuring config.yml
 
-Make the samples.json file with all the available fastq files in data/fastq folder. Note that ```make_samples.py``` might need to be modified in order to recognize your fastq files and guess the sample names. Keep sample names that corresponds to the fastq files for now as they should ideally be merged in the calling methylation frequency stage. This script assumes that read 1 all have ```_R1_``` in their names and read 2 all have ```_R2_``` in their names. The sample names are the first substring of the file name separated by a ```_```.
-
-```bash
-   python3 ../bin/make_samples.py
-```
+Make the samples.json file with all the SRA ids.
 
 The current ```config.yml``` file may not be compatible with the library type. Make sure to modify this file using a text editor to your specific
 library parameters if this is not a WGBS data.
